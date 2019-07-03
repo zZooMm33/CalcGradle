@@ -4,7 +4,7 @@ public class Main {
     public static void main(String[] args) throws JsonProcessingException {
         Calc calc = new Calc();
 
-        System.out.println("1.3999 - 1.3998");
+        System.out.println("\n1.3999 - 1.3998");
         calc.calculation(1.3999, 1.3998, '-');
         if (!calc.isException()){
             System.out.println(calc.toString());
