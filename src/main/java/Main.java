@@ -4,7 +4,6 @@ public class Main {
     public static void main(String[] args) throws JsonProcessingException {
         Calc calc = new Calc();
 
-        //Корректное ариф. дейтвие
         System.out.println("\n1.3999 - 1.3998");
         calc.calculation(1.3999, 1.3998, '-');
         if (!calc.isException()){
@@ -13,7 +12,6 @@ public class Main {
         else System.out.println(calc.getInfoException());
         System.out.println("Json - " + calc.toJson() + "\n");
 
-        //Не корректное ариф. дейтвие
         System.out.println("1.3999 & 1.3998");
         calc.calculation(1.3999, 1.3998, '&');
         if (!calc.isException()){
@@ -21,5 +19,6 @@ public class Main {
         }
         else System.out.println(calc.getInfoException());
         System.out.println("Json - " + calc.toJson() + "\n");
+
     }
 }
